@@ -1,0 +1,49 @@
+.login-screen-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.login-title {
+    display: flex;
+    font-weight: 200;
+    font-size: xx-large;
+    margin-bottom: 1rem;
+    width: 20%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.login-input-text {
+    background: transparent;
+    border: none; /* Remove all borders */
+    border-bottom: .1rem solid var(--primary-color); /* Add a bottom border with desired color and thickness */
+    outline: none; /* Remove the outline when the input is focused */
+    padding: 5px 0; /* Add some padding for better appearance */
+    color: var(--primary-color);
+    font-weight: 200;
+    width: 70%;
+}
+
+.login-input::placeholder {
+    color: var(--primary-color); /* Change the color of the placeholder text */
+}
+
+.login-button-contianer {
+    display: flex;
+}
+
+.login-button {
+    display: flex;
+    background-color: #686868;
+    color: var(--primary-color);
+    font-weight: 200;
+    border-radius: .2rem;
+    border: none;
+    margin-top: .8rem;
+}
