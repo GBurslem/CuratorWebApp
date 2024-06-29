@@ -8,14 +8,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className='header'></h1>
-      <div className='main'>
-        {loggedIn ? (
-          <Stories />
-        ) : (
-          <LoginScreen setLoggedIn={setLoggedIn} />
-        )}
-      </div>
+      {loggedIn ? (
+        <Stories />
+      ) : (
+        <LoginScreen setLoggedIn={setLoggedIn} />
+      )}
     </div>
   );
 }

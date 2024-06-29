@@ -1,0 +1,8 @@
+.story-container {
+    display: flex;
+    align-items: center;
+}
+
+.story-text {
+    margin-left: 1rem;
+}
