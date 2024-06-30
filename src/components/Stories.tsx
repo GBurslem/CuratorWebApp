@@ -19,7 +19,7 @@ function Stories() {
 
     const story3: Story = {
         id: 3,
-        title: 'Journey through the evolution of respiratory science at the Museum of Natural History in New York City, where centuries of discoveries and medical innovations come to life.',
+        title: 'Follow William Harvey on a journey through the evolution of respiratory science at the Museum of Natural History in New York City, where centuries of discoveries and medical innovations are waiting to be explored.',
         filePath: '/CuratorWebApp/new_york_respiratory.mp3'
     }
 
@@ -45,7 +45,7 @@ function Stories() {
             {showAbout ? (
                 <div>
                     <div className='about-container'>
-                        <p className='about-text fade-in'>Curator is on a journey to redefine the museum experience. Discover history and culture through immersive narratives that entertain and educate, letting you live the stories behind each exhibit. Coming soon.</p>
+                        <p className='about-text fade-in'>Curator is on a journey to redefine the museum experience. Discover history and culture through immersive narratives that entertain and educate, letting you live the stories as you explore each exhibit. Coming soon.</p>
                     </div>
                 </div>
             ) : (
