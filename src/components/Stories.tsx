@@ -1,8 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../styles/Stories.css';
 import Story from './Story';
 
 function Stories() {
+    const [showAbout, setShowAbout] = useState(false);
 
     const story1: Story = {
         id: 1,
@@ -22,6 +23,10 @@ function Stories() {
         filePath: './src/media/new_york_respiratory.mp3'
     }
 
+    const handleOnClick = () => {
+        setShowAbout(!showAbout);
+    }
+
     const titleRef = useRef<HTMLHeadingElement>(null);
     const storiesRef = useRef<HTMLDivElement>(null);
 
@@ -37,13 +42,26 @@ function Stories() {
     return (
         <div className="main-container">
             <h1 className='header'></h1>
-            <div className='stories-container'>
-                <h3 ref={titleRef} className='stories-container-title  fade-in'>Step Into Story</h3>
-                <div ref={storiesRef} className='stories-body-container'>
-                    <Story story={story1} />
-                    <Story story={story2} />
-                    <Story story={story3} />
+            {showAbout ? (
+                <div>
+                    <div className='about-container'>
+                        <p className='about-text fade-in'>Curator is on a journey to redefine the museum experience. Discover history and culture through immersive narratives that entertain and educate, letting you live the stories behind each exhibit. Coming soon.</p>
+                    </div>
                 </div>
+            ) : (
+                <div>
+                    <div className='stories-container'>
+                        <h3 ref={titleRef} className='stories-container-title  fade-in'>Step Into Story</h3>
+                        <div ref={storiesRef} className='stories-body-container'>
+                            <Story story={story1} />
+                            <Story story={story2} />
+                            <Story story={story3} />
+                        </div>
+                    </div>
+                </div>
+            )}
+            <div className='stories-footer'>
+                <div className='stories-footer-link' onClick={handleOnClick}>{showAbout ? "Back" : "About"}</div>
             </div>
         </div>
     );

@@ -30,6 +30,34 @@
     opacity: 0;
 }
 
+.stories-footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: .25rem;
+}
+
+.about-container {
+    width: 60%;
+    padding-left: 20%;
+}
+
+.about-text {
+    font-weight: var(--text-weight);
+    font-size: .9rem;
+    opacity: 0;
+}
+
+.stories-footer-link {
+    font-weight: var(--text-weight);
+    font-size: small;
+}
+.stories-footer-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .fade-in {
     animation: fadeIn 2s ease-in-out forwards;
 }
