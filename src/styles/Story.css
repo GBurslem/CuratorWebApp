@@ -21,7 +21,7 @@
     font-size: 1.2rem;
     color: var(--primary-color);
     transition: transform 0.2s;
-    width: 5%;
+    width: 10px;
 }
 
 .story-button:active {
