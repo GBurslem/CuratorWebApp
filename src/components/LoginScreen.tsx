@@ -6,8 +6,8 @@ interface LoginScreenProps {
 }
 
 function LoginScreen({setLoggedIn}: LoginScreenProps) {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
     const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUsername(event.target.value);
@@ -20,7 +20,27 @@ function LoginScreen({setLoggedIn}: LoginScreenProps) {
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
 
-        setLoggedIn(true);
+        if (username === '' || password === '') {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        if (username === 'Maureen' && password === 'stepintostory') {
+            setLoggedIn(true);
+            return;
+        }
+
+        if (username === 'Sot' && password === 'stepintostory') {
+            setLoggedIn(true);
+            return;
+        }
+
+        if (username === 'Callum' && password === 'stepintostory') {
+            setLoggedIn(true);
+            return;
+        }
+
+        alert('Invalid username or password, please try again.')
     };
 
     return (
@@ -50,7 +70,7 @@ function LoginScreen({setLoggedIn}: LoginScreenProps) {
                     />
                 </div>
                 <div className='login-button-container'>
-                    <button type="submit" className='login-button'>Login</button>
+                    <button type="submit" className='login-button'>Enter</button>
                 </div>
             </form>
         </div>

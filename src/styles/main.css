@@ -4,6 +4,8 @@
   background-color: #242424;
 
   --primary-color: rgba(255, 255, 255, 0.87);
+  --heading-weight: 200;
+  --text-weight: 150;
 }
 
 body {

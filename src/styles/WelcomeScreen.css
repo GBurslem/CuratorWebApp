@@ -1,0 +1,26 @@
+.welcome-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-screen-title {
+    color: var(--primary-color);
+    font-weight: var(--heading-weight);
+    opacity: 0;
+    animation: fadeInOut 6s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
