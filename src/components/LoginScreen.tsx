@@ -30,7 +30,7 @@ function LoginScreen({setLoggedIn}: LoginScreenProps) {
             return;
         }
 
-        if (username === 'Sot' && password === 'stepintostory') {
+        if (username === 'Sot' && password === 'sidcypriotgod') {
             setLoggedIn(true);
             return;
         }

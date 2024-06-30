@@ -5,8 +5,8 @@ import Story from './Story';
 function Stories() {
     const [showAbout, setShowAbout] = useState(false);
 
-    const story1: Story = {
-        id: 1,
+    const story3: Story = {
+        id: 3,
         title: 'Embark on an exciting journey with the story of the Rosetta Stone, from its discovery by a French soldier to its pivotal role in deciphering ancient Egyptian hieroglyphs, now showcased in the British Museum, London.',
         filePath: '/CuratorWebApp/rosetta_stone.mp3'
     }
@@ -17,8 +17,8 @@ function Stories() {
         filePath: '/CuratorWebApp/glenlivet_distillery.mp3'
     }
 
-    const story3: Story = {
-        id: 3,
+    const story1: Story = {
+        id: 1,
         title: 'Follow William Harvey on a journey through the evolution of respiratory science at the Museum of Natural History in New York City, where centuries of discoveries and medical innovations are waiting to be explored.',
         filePath: '/CuratorWebApp/new_york_respiratory.mp3'
     }
