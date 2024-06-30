@@ -25,7 +25,7 @@ function LoginScreen({setLoggedIn}: LoginScreenProps) {
             return;
         }
 
-        if (username === 'Maureen' && password === 'stepintostory') {
+        if (username === 'Maureen' && password === 'letmein') {
             setLoggedIn(true);
             return;
         }
@@ -35,7 +35,7 @@ function LoginScreen({setLoggedIn}: LoginScreenProps) {
             return;
         }
 
-        if (username === 'Callum' && password === 'stepintostory') {
+        if (username === 'Callum' && password === 'calwhiskyking') {
             setLoggedIn(true);
             return;
         }
