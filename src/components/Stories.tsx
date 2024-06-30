@@ -8,19 +8,19 @@ function Stories() {
     const story1: Story = {
         id: 1,
         title: 'Embark on an exciting journey with the story of the Rosetta Stone, from its discovery by a French soldier to its pivotal role in deciphering ancient Egyptian hieroglyphs, now showcased in the British Museum, London.',
-        filePath: './src/media/rosetta_stone.mp3'
+        filePath: '/rosetta_stone.mp3'
     }
 
     const story2: Story = {
         id: 2,
         title: 'Step into the rich history and tradition of Scottish whisky at the Glenlivet Distillery, where centuries-old craftsmanship and stories of resilience come to life.',
-        filePath: './src/media/glenlivet_distillery.mp3'
+        filePath: '/glenlivet_distillery.mp3'
     }
 
     const story3: Story = {
         id: 3,
         title: 'Journey through the evolution of respiratory science at the Museum of Natural History in New York City, where centuries of discoveries and medical innovations come to life.',
-        filePath: './src/media/new_york_respiratory.mp3'
+        filePath: '/new_york_respiratory.mp3'
     }
 
     const handleOnClick = () => {
